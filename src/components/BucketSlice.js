@@ -137,7 +137,7 @@ export const bucketSlice = createSlice({
     deleteCard: {
       reducer(state, action) {
         const { bucketIndex, cardIndex } = action.payload;
-        console.log(action.payload, "deelele");
+        console.log(action.payload, "delete");
         state.buckets[bucketIndex].cards.splice(cardIndex, 1);
       },
     },
