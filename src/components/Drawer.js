@@ -131,6 +131,7 @@ function ResponsiveDrawer() {
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
                 width: drawerWidth,
+                backgroundColor: "#B2A4FF",
               },
             }}
           >

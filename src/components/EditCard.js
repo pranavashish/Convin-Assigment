@@ -9,7 +9,10 @@ const EditCard = forwardRef((props, ref) => (
   <>
     <DialogTitle>Edit Form</DialogTitle>
     <DialogContent>
-      <FormGroup sx={{ pt: "1rem", gap: "1rem" }} ref={ref}>
+      <FormGroup
+        sx={{ pt: "1rem", gap: "1rem", color: "rgb(178,164,255) " }}
+        ref={ref}
+      >
         <TextField
           helperText="Please enter video name (required)"
           label="name"

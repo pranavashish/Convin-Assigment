@@ -69,20 +69,23 @@ export default function ListItemComp({
     }),
     [active]
   );
-
+  const [selectedIndex, setSelectedIndex] = useState(null);
   return (
     <ListItem
       ref={drop}
       disablePadding
       style={{
-        backgroundColor: `${bgColor}`,
+        // backgroundColor: `${bgColor}`,
         color: `${bgColor === "" ? "inherit" : "white"}`,
         outline: isOver ? "2px dotted red" : "",
+        backgroundColor: selectedIndex === index ? "#B2A4FF" : `${bgColor}`,
       }}
       key={bucket.id}
+      onClick={() => setSelectedIndex(index)}
     >
       <ListItemButton
         onClick={() => {
+          setSelectedIndex(selectedIndex === index ? null : index);
           setCards(bucket.cards);
           setActive(index);
         }}

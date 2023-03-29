@@ -98,6 +98,7 @@ export default function CardComp({
         position: "relative",
         textOverflow: "ellipsis",
         overflow: "hidden",
+        border: "1px solid #B2A4FF",
       }}
       sx={{
         maxWidth: 250,
@@ -127,6 +128,7 @@ export default function CardComp({
           display: "flex",
           alignItems: "flex-end",
           justifyContent: "center",
+          border: "1px solid #B2A4FF",
         }}
       >
         <Button size="small" onClick={handleClick}>

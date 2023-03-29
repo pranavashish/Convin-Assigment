@@ -26,6 +26,7 @@ const NavBar = () => {
         >
           <MenuIcon />
         </IconButton>
+
         <Box sx={{ p: "0.5rem" }}>
           <img
             src={Logo}
